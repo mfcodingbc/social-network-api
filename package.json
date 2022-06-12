@@ -1,0 +1,32 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "API for a social network application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfcodingbc/social-network-api.git"
+  },
+  "keywords": [
+    "social",
+    "network",
+    "API",
+    "mongoose",
+    "mongoDB",
+    "noSQL"
+  ],
+  "author": "mfcodingbc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfcodingbc/social-network-api/issues"
+  },
+  "homepage": "https://github.com/mfcodingbc/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6"
+  }
+}
