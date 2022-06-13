@@ -6,7 +6,7 @@ router.use('/api', apiRoutes);
 
 // user error response on api calls
 router.use((req, res) => {
-  res.status(404).send('<h1>😝 404 Error!</h1>');
+  res.status(404).send('<h1>😝 404 Error! Check your api routes and api calls.</h1>');
 });
 
 module.exports = router;

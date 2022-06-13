@@ -11,7 +11,8 @@ const ReactionSchema = new Schema(
     reactionBody: {
       type: String,
       required: 'Enter in your reaction',
-      validate: [({ length }) => length <= 280, `You've got a big reaction to this thought, but please limit it by making it shorter.`]
+      validate: [({ length }) => length <= 280, `You've got a big reaction to this thought, but please limit it by making it shorter.`],
+      trim: true
     },
     username: {
       type: String,
