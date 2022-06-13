@@ -1,4 +1,4 @@
-const { User, Thought } = require('../models');
+const { User } = require('../models');
 
 const userController = {
   // USER METHODS
@@ -32,11 +32,11 @@ const userController = {
           res.status(404).json({ message: 'No user found with this id!'});
         }
         // ...otherwise, retrieve user data
-        res.json(dbUserData);
+        res.status(200).json(dbUserData);
       })
       .catch(err => {
         console.log(err);
-        res.status(400).json(err);
+        res.status(500).json(err);
       })
   },
 
